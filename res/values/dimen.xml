@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="paddingDoubleMedium">32.0dip</dimen>
+    <dimen name="paddingMedium">16.0dip</dimen>
+    <dimen name="paddingSmall">8.0dip</dimen>
+    <dimen name="paddingTripleSmall">24.0dip</dimen>
+
+    <integer name="bubbleSize">25</integer>
+
+</resources>

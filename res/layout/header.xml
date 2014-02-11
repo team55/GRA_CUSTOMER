@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent"
+              android:orientation="vertical"
+              style="@style/MatchWidth"
+              android:padding="10dp" android:paddingBottom="20dp">
+
+<!--
+    <View android:layout_width="match_parent" android:layout_height="55dp" />
+    <View android:layout_width="match_parent" android:layout_height="70dp" />
+-->
+
+
+        <LinearLayout style="@style/compound_field_container">
+            <AutoCompleteTextView
+                    android:id="@+id/edtActivity"
+                    style="@style/compound_field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_kindofactivity"/>
+
+            <!--
+                               <ImageButton android:id="@+id/btnClearKindOfActivity" android:src="@drawable/icon_tag" style="@style/compound_field_button"/>
+            -->
+
+            <ru.team55.ui.SymbolButton
+                    android:text="R"
+                    android:background="@null"
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/orange2"
+                    android:textSize="24dp"
+                    android:shadowColor="#666666"
+                    android:shadowDy="1.1"
+                    android:shadowRadius="1.0"
+                    android:id="@+id/btnKindOfActivityClear"/>
+
+            <!-- голосовой поиск и кнопка поиска -->
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/compound_field_container">
+
+            <AutoCompleteTextView
+                    android:id="@+id/edtAdress"
+                    android:hint="@string/hint_adress"
+                    style="@style/compound_field"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"/>
+
+            <!--        <ImageButton android:id="@+id/btnMap" android:src="@drawable/icn_map_marker" style="@style/compound_field_button"/>
+                    <ImageButton android:id="@+id/btnClearAdress" android:src="@drawable/icn_delete" style="@style/compound_field_button"/>
+ -->
+            <ru.team55.ui.SymbolButton
+                    android:text="R"
+                    android:background="@null"
+                    android:paddingRight="0dp"
+                    android:paddingLeft="0dp"
+                    android:layout_width="32dp"
+
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/orange2"
+                    android:textSize="24dp"
+                    android:shadowColor="#666666"
+                    android:shadowDy="1.1"
+                    android:shadowRadius="1.0"
+                    android:id="@+id/btnAdressClear"/>
+
+        </LinearLayout>
+
+
+
+
+        <!--
+                       <ru.team55.gra.api.Adapters.TwoChipsAutoCompleteTextView
+                               android:id="@+id/chips"
+                               style="@style/MatchWidth"
+                               android:background="@drawable/ifield"
+                               android:minHeight="48dp"
+                               android:hint="какая услуга требуется и ваш адрес" />
+        -->
+
+        <!--android:background="@drawable/selector_input"
+        android:background="@drawable/selector_input"
+        тут нужно такое поведение - рамка есть полная
+        -->
+
+
+        <!-- кнопки -->
+        <LinearLayout android:orientation="horizontal" style="@style/MatchWidth" android:gravity="right"
+                      android:showDividers="middle"
+                      android:divider="?android:dividerVertical"
+                      android:dividerPadding="4dp">
+
+            <!--<Button style="@style/Wrap" android:text="Поиск" android:background="@drawable/ibutton"
+                    android:textColor="#ffffff"/>
+-->
+
+            <!--
+                              <ru.team55.ui.SymbolButton
+                                      android:text="R"
+                                      style="?android:borderlessButtonStyle"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textColor="@color/orange2"
+                                      android:textSize="32dp"
+                                      android:shadowColor="#666666"
+                                      android:shadowDy="1.1"
+                                      android:shadowRadius="1.0"
+                                      android:id="@+id/btnSearchClear"/>
+            -->
+            <ru.team55.ui.SymbolButton2
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:textColor="@color/orange2"
+                    android:textSize="32dp"
+                    android:shadowColor="#666666"
+                    android:shadowDy="1.1"
+                    android:shadowRadius="1.0"
+                    android:id="@+id/btnGeoPoint"/>
+
+            <ru.team55.ui.SymbolButton2
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="K"
+                    android:textColor="@color/orange2"
+                    android:textSize="32dp"
+                    android:shadowColor="#666666"
+                    android:shadowDy="1.1"
+                    android:shadowRadius="1.0"
+                    android:id="@+id/btnVoiceSearch"/>
+
+            <ru.team55.ui.SymbolButton
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\@"
+                    android:textColor="@color/orange2"
+                    android:textSize="32dp"
+                    android:shadowColor="#666666"
+                    android:shadowDy="1.1"
+                    android:shadowRadius="1.0"
+                    android:id="@+id/btnSearch"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" style="@style/MatchWidth" android:gravity="center">
+            <TextView style="@style/Match" android:text="" android:id="@+id/textSearchResult"/>
+        </LinearLayout>
+
+</LinearLayout>

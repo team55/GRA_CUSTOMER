@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="280dp"
+             android:layout_gravity="start"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:background="@color/sidebar_body">
+
+
+
+    <!-- Верхний контейнер -->
+    <LinearLayout style="@style/MatchWidth" android:orientation="vertical">
+
+
+
+        <LinearLayout style="@style/Match" android:orientation="vertical"
+                      android:padding="@dimen/abc_action_bar_icon_vertical_padding">
+
+            <TextView style="@style/Wrap" android:text="@string/prompt_region" android:textColor="@color/grey1"/>
+            <Spinner android:id="@+id/spRegion" style="@style/MatchWidth"
+
+                     android:spinnerMode="dialog" android:prompt="@string/prompt_region"/>
+
+
+<!--
+            <TextView style="@style/Wrap" android:text="@string/prompt_report_form" android:textColor="@color/grey1"/>
+            <Spinner android:id="@+id/spKindOfReportDetails" style="@style/MatchWidth"
+
+                     android:spinnerMode="dialog" android:prompt="@string/prompt_report_form"/>
+-->
+
+        </LinearLayout>
+
+   <!--     <LinearLayout android:id="@+id/btnSettings"
+                      style="@style/Match" android:orientation="horizontal" android:gravity="center_vertical"
+                      android:paddingTop="8dp"
+                      android:background="@drawable/btn_sidebar_selector">
+
+            <ru.team55.ui.SymbolTextView style="@style/Wrap" android:textSize="32dp" android:text="o"
+                                         android:padding="@dimen/abc_action_bar_icon_vertical_padding"
+                                         android:textColor="@color/orange2"/>
+            <TextView style="@style/Wrap" android:text="@string/app_leftmenu_settings"
+                      android:textColor="@color/grey1"/>
+
+        </LinearLayout> -->
+
+        <LinearLayout  android:id="@+id/btnHistory" style="@style/Match" android:orientation="horizontal"
+                       android:gravity="center_vertical"
+                       android:background="@drawable/btn_sidebar_selector">
+
+            <ru.team55.ui.SymbolTextView style="@style/Wrap" android:textSize="32dp" android:text="@string/icon_search"
+                                         android:padding="@dimen/abc_action_bar_icon_vertical_padding"
+                                         android:textColor="@color/orange2"/>
+            <TextView style="@style/Wrap" android:text="@string/app_leftmenu_history"
+                      android:textColor="@color/grey1"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/btnFavorites" style="@style/Match" android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:background="@drawable/btn_sidebar_selector">
+
+            <ru.team55.ui.SymbolTextView style="@style/Wrap" android:textSize="32dp" android:text="6"
+                                         android:padding="@dimen/abc_action_bar_icon_vertical_padding"
+                                         android:textColor="@color/orange2"/>
+            <TextView style="@style/Wrap"  android:text="@string/app_leftmenu_favorites"
+                      android:textColor="@color/grey1"/>
+        </LinearLayout>
+
+
+
+        <TextView style="@style/Wrap" android:text="Сервис предоставлен ООО 'Аналитика данных', торговая марка 'BeQuick'" android:textColor="#ffffff" android:padding="8dp"/>
+
+        <Button style="@style/MatchWidth" android:background="@drawable/btn_ya_selector" android:text="Написать отзыв" android:layout_margin="8dp" android:id="@+id/sendFeedback"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <!-- Нижний контейнер -->
+    <LinearLayout style="@style/MatchWidth"
+                  android:orientation="vertical"
+                  android:background="@color/sidebar_bottom"
+                  android:layout_alignParentBottom="true"
+                  android:gravity="center_vertical"
+                  android:layout_gravity="bottom">
+
+
+
+        <LinearLayout android:id="@+id/layoutLogin" style="@style/MatchWidth" android:orientation="horizontal">
+
+            <ru.team55.ui.SymbolTextView android:padding="@dimen/abc_action_bar_icon_vertical_padding"
+                                     android:text="A" style="@style/Wrap" android:textSize="32dp"
+                                     android:textColor="@color/grey1"/>
+
+            <TextView style="@style/MatchHeight" android:layout_weight="1"
+                  android:textColor="@color/grey1"
+                  android:gravity="center_vertical"
+                  android:id="@+id/txtLogin"
+                  android:text="Вы не авторизованы"/>
+
+            <Button android:id="@+id/btnLogin" style="@style/Wrap" android:text="Вход"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout android:id="@+id/layoutAccount" style="@style/MatchWidth"  android:orientation="horizontal">
+
+            <ru.team55.ui.SymbolTextView android:padding="@dimen/abc_action_bar_icon_vertical_padding"
+                                         android:text="m" style="@style/Wrap" android:textSize="32dp"
+                                         android:textColor="@color/grey1"/>
+
+            <TextView style="@style/MatchHeight"
+                      android:textColor="@color/grey1"
+                      android:gravity="center_vertical"
+                      android:text="Лицевой счет: "/>
+
+            <TextView style="@style/MatchHeight"
+                      android:textColor="@color/orange1"
+                      android:gravity="center_vertical"
+                      android:id="@+id/txtCabinetTotal"
+                      android:text="400 (200)"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

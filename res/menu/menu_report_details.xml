@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item android:id="@+id/mnu_info"
+          android:icon="@android:drawable/ic_dialog_info"
+          android:showAsAction="always"
+          android:title="О рейтингах"
+          android:titleCondensed="О рейтингах"
+          android:visible="true"/>
+
+    <item android:id="@+id/mnu_call"
+          android:icon="@android:drawable/ic_menu_call"
+          android:showAsAction="always"
+          android:title="звонок"
+          android:titleCondensed="звонок"
+          android:visible="true"/>
+
+
+
+    <item android:id="@+id/mnu_map"
+          android:icon="@android:drawable/ic_dialog_map"
+          android:showAsAction="always"
+          android:title="маршрут"
+          android:titleCondensed="маршрут"
+          android:visible="true"
+            />
+
+
+
+    &lt;!&ndash;android:menuCategory="system"
+          android:showAsAction="ifRoom|collapseActionView"
+&ndash;&gt;
+
+    <item android:title="Действия" android:showAsAction="always">
+        <menu>
+
+            <item android:id="@+id/mnu_web"
+                  android:icon="@android:drawable/ic_menu_gallery"
+                  android:title="Перейти на сайт"
+                  android:titleCondensed="cайт"
+                  android:visible="true"/>
+
+
+            <item android:id="@+id/mnu_mail"
+                  android:icon="@android:drawable/ic_dialog_email"
+                  android:showAsAction="always"
+                  android:title="Написать письмо"
+                  android:titleCondensed="письмо"
+                  android:visible="true"/>
+
+            <item android:id="@+id/mnu_add_favorites"
+                  android:icon="@drawable/rating_favorite"
+                  android:showAsAction="always"
+                  android:title="Добавить в избранное"
+                  android:titleCondensed="В избранное"
+                  android:visible="true"/>
+
+            <item android:id="@+id/mnu_sale"
+                  android:icon="@drawable/rating_good"
+                  android:showAsAction="always"
+                  android:title="Оформить заказ"
+                  android:titleCondensed="Заказ"
+                  android:visible="true"/>
+
+
+
+        </menu>
+    </item>
+
+
+
+
+</menu>
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--
+<item android:id="@+id/action_search"
+      android:icon="@android:drawable/ic_menu_search"
+      android:title="@string/action_bar_search"
+      app:showAsAction="ifRoom"
+      app:actionProviderClass="android.support.v7.widget.SearchActionProvider" />
+
+-->
+
+   <!-- <item android:id="@+id/mnu_info"
+          android:icon="@android:drawable/ic_menu_add"
+            android:title="Карта" />
+-->
+    <item android:id="@+id/mnu_call"
+          android:icon="@android:drawable/ic_menu_call"
+          android:title="Позвонить"
+          app:showAsAction="always|withText"
+           />
+    <!--android:menuCategory="system"  android:icon="@android:drawable/sym_action_chat" -->
+
+    <item android:id="@+id/mnu_order"
+
+          app:showAsAction="always"
+          android:title="Оформить заказ"
+          android:titleCondensed="Заказать" />
+
+
+
+    <!-- Меню еще -->
+    <item
+      android:icon="@android:drawable/ic_menu_more"
+      android:title="Еще.."
+      app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item android:id="@+id/mnu_add_favorites"
+                  android:icon="@android:drawable/ic_menu_add"
+                  android:title="Добавить в избранное"
+                  app:showAsAction="always" />
+
+            <item android:id="@+id/mnu_web"
+                  android:icon="@android:drawable/ic_menu_view"
+                  android:title="Перейти на сайт"
+                  app:showAsAction="always"/>
+
+            <item android:id="@+id/mnu_map"
+                  android:icon="@android:drawable/ic_menu_mapmode"
+                  android:title="Карта"
+                  app:showAsAction="ifRoom"
+                    />
+
+
+            <item android:id="@+id/mnu_mail"
+                  android:icon="@android:drawable/ic_menu_edit"
+                  android:title="Написать письмо"
+                  app:showAsAction="ifRoom" />
+
+
+
+        </menu>
+
+    </item>
+    <!-- Меню еще -->
+
+</menu>

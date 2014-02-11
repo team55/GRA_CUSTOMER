@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:orientation="vertical" style="@style/MatchWidth">
+        <LinearLayout android:orientation="horizontal" style="@style/MatchWidth">
+            <ImageView style="@style/Wrap"       android:id="@+id/icon"  android:padding="5dp"/>
+            <TextView style="@style/WeightWidth" android:id="@+id/text" android:layout_gravity="center_vertical"
+                      android:text="Нет данных" android:textColor="@android:color/black"/>
+        </LinearLayout>
+       <!-- <View android:background="@drawable/card_header_divider"
+              android:layout_width="fill_parent"
+              android:layout_height="2.0dip"
+              android:layout_marginTop="8.0dip"  />-->
+    </LinearLayout>
+
+</merge>

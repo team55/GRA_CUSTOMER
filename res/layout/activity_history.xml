@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/menu_right_frame"
+              android:background="@color/slide_panel_background"
+              android:orientation="vertical"
+              style="@style/Match"
+              android:padding="2dp">
+    <!--  почему двоится?
+        <TextView style="@style/Wrap" android:text="История sdsds:"/>-->
+
+    <ListView style="@style/WeightHeightMatchWidth" android:id="@+id/listview" android:background="@drawable/bg_post"  />
+
+</LinearLayout>

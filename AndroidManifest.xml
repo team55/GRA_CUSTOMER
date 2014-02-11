@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ru.team55.gra.rating"
+
+          android:versionCode="16"
+          android:versionName="1.0.0.15 beta">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
+    <supports-screens android:smallScreens="false"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"
+                      android:anyDensity="true"/>
+
+    <!-- КАРТЫ -->
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+
+    <!-- НАВИГАЦИЯ -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <permission android:name="ru.team55.gra.customer.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="ru.team55.gra_agent.customer.permission.MAPS_RECEIVE"/>
+
+
+    <!-- Это для гугл-карт -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <!-- ИНТЕРНЕТ -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <!-- ДЛЯ РЕГИСТРАЦИИ -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+
+    <!-- PUSH нотификация -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <!--Звонки  -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--Получить номер  -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+   <!-- <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.BROADCAST_SMS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+   -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+
+
+    <application
+            android:hardwareAccelerated="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:name="ru.team55.gra.rating.app" >
+
+
+        <receiver android:name="ru.team55.sms.SMSReceiver" android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".welcome_" android:label="@string/app_name"
+                  android:theme="@style/Theme.Gra_blue"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:screenOrientation="sensorPortrait"
+                >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".pageLoginRegister_" android:label="Авторизация"
+                  android:theme="@style/Theme.Gra_blue"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:screenOrientation="sensorPortrait"
+                />
+
+        <activity android:name=".pageDetails_"
+                  android:label="Подробнее"
+                  android:theme="@style/Theme.Gra_blue"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:screenOrientation="sensorPortrait"
+                  uiOptions="splitActionBarWhenNarrow">
+            <!-- для поддержки разделения экшенбара на младших версиях менее 14,на старших юай опции работают -->
+            <meta-data android:name="android.support.UI_OPTIONS"
+                       android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity android:name=".History_" android:label="История запросов" android:theme="@style/Theme.Gra_blue"/>
+        <activity android:name=".Favorites_" android:label="Избранное" android:theme="@style/Theme.Gra_blue"/>
+
+        <activity android:name=".pageOrders_" android:label="Оформление заказа" android:theme="@style/Theme.Gra_blue"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:windowSoftInputMode="stateHidden|adjustResize"
+                  android:screenOrientation="sensorPortrait"
+                  uiOptions="splitActionBarWhenNarrow"
+                >
+            <!-- для поддержки разделения экшенбара на младших версиях менее 14,на старших юай опции работают -->
+            <meta-data android:name="android.support.UI_OPTIONS"
+                       android:value="splitActionBarWhenNarrow" />
+
+        </activity>
+
+    </application>
+
+</manifest>

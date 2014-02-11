@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/Match" android:paddingLeft="32dp" android:paddingRight="8dp">
+
+<!--
+    <LinearLayout android:orientation="horizontal" style="@style/MatchWidth">
+        <TextView style="@style/WeightWidth" android:id="@+id/textPokazateli_name" android:textStyle="bold"/>
+        <ru.team55.ui.CustomFontTextView style="@style/Wrap" android:id="@+id/textEstimation" android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView style="@style/Match" android:id="@+id/textPokazateli_comment" android:textColor="#666666"/>
+-->
+
+    <LinearLayout android:orientation="horizontal" style="@style/MatchWidth">
+        <TextView style="@style/WeightWidth" android:id="@+id/textPokazateli_comment" android:textColor="#666666"/>
+        <!--<TextView style="@style/WeightWidth" android:id="@+id/textPokazateli_name" android:textStyle="bold"/>-->
+        <!--<ru.team55.ui.CustomFontTextView style="@style/Wrap" android:id="@+id/textEstimation" android:textSize="18dp" />-->
+        <TextView style="@style/Wrap" android:id="@+id/textEstimation" android:textColor="#666666"/>
+    </LinearLayout>
+
+    <!--<TextView style="@style/Match" android:id="@+id/textPokazateli_comment" android:textColor="#666666"/>-->
+
+
+</LinearLayout>

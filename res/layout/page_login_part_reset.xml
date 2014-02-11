@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/Match" android:padding="16dp">
+
+    <!-- Login form -->
+    <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/panel_logins"
+            android:padding="16dp"
+            >
+
+        <!--style="@style/LoginFormContainer"-->
+        <LinearLayout style="@style/Match"
+                      android:orientation="vertical">
+
+            <TextView style="@style/Wrap" android:text="Выберите email на который будет отправлена ссылка для восстановления пароля" android:textColor="@color/blue1"/>
+
+            <Spinner android:id="@+id/email"
+                     style="@style/MatchWidth"
+                     android:spinnerMode="dialog" android:prompt="@string/prompt_email"/>
+
+            <ru.team55.ui.SymbolButton
+                    android:text="$"
+                    android:textSize="32dp"
+                    android:textColor="@color/orange3"
+                    android:id="@+id/log_in_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:layout_gravity="right" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

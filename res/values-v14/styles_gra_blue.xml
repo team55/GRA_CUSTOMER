@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="Theme.Gra_blue" parent="@style/Theme.AppCompat.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_gra_blue</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Gra_blue</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Gra_blue</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Gra_blue</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Gra_blue</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Gra_blue</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_gra_blue</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_gra_blue</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Gra_blue</item>
+
+
+
+
+        <!-- Стили контролов -->
+        <item name="android:editTextStyle">@style/EditTextGra_Orange</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewGra_Orange</item>
+        <item name="android:buttonStyle">@style/ButtonGra_Orange</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonGra_Orange</item>
+        <item name="android:spinnerStyle">@style/SpinnerGra_Orange</item>
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerGra_Orange.DropDown</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemGra_Orange</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarGra_Orange</item>
+        <item name="android:listViewStyle">@style/ListViewGra_Orange</item>
+        <item name="android:listViewWhiteStyle">@style/ListViewGra_Orange.White</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemGra_Orange</item>
+        
+    </style>
+
+    <style name="ActionBar.Solid.Gra_blue" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_background_textured_gra_blue</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_gra_blue</item>
+        <item name="android:backgroundSplit">@drawable/ab_background_textured_gra_blue</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Gra_blue</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Gra_blue" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_gra_blue</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Gra_blue</item>
+    </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Gra_blue.Widget" parent="@style/Theme.AppCompat">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Gra_blue</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Gra_blue</item>
+    </style>
+
+</resources>

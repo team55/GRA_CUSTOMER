@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="blue">#770000ff</drawable>
+    <color name="header_blue">#772e6e9a</color>
+
+    <!-- пробуем цветом -->
+    <color name="header_white_text">#c5e3ef</color>
+
+    <!-- пробуем прозрачностью - для синего не подходит а на сером гуд -->
+    <color name="header_white_text2">#77ffffff</color>
+
+    <color name="header_blue_text">#4b92b9</color>
+
+    <color name="header_grey">#bac2cf</color>
+    <color name="header_grey2">#3a3a3a</color>
+
+    <!-- вкладки -->
+    <color name="header_grey3">#333333</color>
+    <color name="header_grey3a">#50333333</color>
+
+
+
+
+
+    <color name="slide_panel_background1">#ff333333</color>
+    <color name="slide_panel_background">#ffbbbbbb</color>
+    <color name="slide_panel_active">#ff3c3c3c</color>
+
+    <color name="body_background">#ffeeeeee</color>
+
+
+
+    <!-- мастер цвета -->
+
+    <color name="grey1">#bfbfbf</color>
+    <color name="blue1">#6699ff</color>
+    <color name="green1">#99cc33</color>
+    <color name="orange1">#ffcc00</color>
+
+    <color name="grey2">#808080</color>
+    <color name="blue2">#3366cc</color>
+    <color name="green2">#00cc00</color>
+    <color name="orange3">#ff9900</color>
+
+    <color name="grey3">#404040</color>
+    <color name="blue3">#003399</color>
+    <color name="green3">#558800</color>
+    <color name="orange2">#ff6600</color>
+
+    <color name="red1">#cc0000</color>
+
+    <color name="grey4">#d2d1d0</color>
+
+    <color name="body">#f6f0e7</color>
+
+
+
+    <!-- коричневый сайдбар -->
+    <color name="sidebar_selected">#363636</color>
+    <color name="sidebar_body">#4a4a4a</color>
+    <color name="sidebar_bottom">#505050</color>
+
+
+
+
+
+</resources>

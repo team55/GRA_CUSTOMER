@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GRA_CUSTOMER.iml" filepath="$PROJECT_DIR$/GRA_CUSTOMER.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LIBRARIES/PagerSlidingTabStrip/PagerSlidingTabStrip.iml" filepath="$PROJECT_DIR$/../LIBRARIES/PagerSlidingTabStrip/PagerSlidingTabStrip.iml" group="LIBS" />
+      <module fileurl="file://$PROJECT_DIR$/../LIBRARIES/support/appcompat/appcompat.iml" filepath="$PROJECT_DIR$/../LIBRARIES/support/appcompat/appcompat.iml" group="LIBS" />
+    </modules>
+  </component>
+</project>
+

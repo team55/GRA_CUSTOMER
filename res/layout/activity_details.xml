@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!--
+<android.support.v4.widget.SlidingPaneLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sp"
+        style="@style/Match"
+        android:background="@drawable/brush_sidebar"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+                      android:orientation="vertical"
+                      android:layout_width="280dp"
+                      android:gravity="left"
+                      android:layout_height="match_parent"
+                      >
+
+            &lt;!&ndash; тут вставим информацию об оценке? &ndash;&gt;
+
+        </LinearLayout>
+-->
+
+
+<!--
+    <ScrollView android:layout_height="match_parent"
+                android:scrollbarStyle="outsideOverlay"
+                android:layout_weight="1"
+                android:layout_width="600dp"
+                android:background="@drawable/brush_noise"
+                android:id="@+id/svMap"
+                >
+
+-->
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/Match"
+                android:scrollbarStyle="outsideOverlay"
+                android:background="@drawable/brush_noise"
+                android:id="@+id/svMap"
+                >
+    <!--android:fillViewport="true"-->
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/Wrap"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/image_4px_border"
+                                android:layout_marginTop="5dp">
+
+<!--
+                    <ImageView  android:layout_width="320dp" android:layout_height="160dp"  android:id="@+id/imgMapView" />
+-->
+                    <ImageView  android:layout_width="match_parent" android:layout_height="160dp"  android:id="@+id/imgMapView"
+                                android:scaleType="centerCrop"/>
+
+
+                </RelativeLayout>
+
+
+
+                <!-- Основной контейнер -->
+                <LinearLayout
+                        style="@style/Match"
+                        android:orientation="vertical"
+                        android:id="@+id/container"
+                        android:showDividers="middle"
+                        android:divider="?android:dividerHorizontal"
+                        android:dividerPadding="8dp">
+
+                    <!-- Время работы -->
+                    <LinearLayout  style="@style/Match" android:orientation="vertical" android:id="@+id/containerTime"/>
+
+                    <!-- Деньги -->
+                    <LinearLayout style="@style/Match" android:orientation="vertical" android:id="@+id/containerMoney"/>
+
+                </LinearLayout>
+
+
+                <!-- контейнер для описания рейтинга-->
+                <LinearLayout style="@style/Match"  android:orientation="vertical" android:id="@+id/containerForRatings" android:paddingBottom="32dp"/>
+
+
+
+<!--
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="vertical">
+                        <ExpandableListView android:fillViewport="true" android:id="@+id/listDetails"   android:paddingTop="20dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+
+                                            android:groupIndicator="@null"
+                                            android:padding="5dp"
+                                            android:scrollbarStyle="outsideOverlay"/>
+                    </LinearLayout>
+-->
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+<!--
+</android.support.v4.widget.SlidingPaneLayout>-->

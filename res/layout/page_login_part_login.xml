@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/Match" android:padding="16dp">
+
+    <!-- Login form -->
+    <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/panel_logins"
+            android:padding="16dp"
+            >
+
+        <!--style="@style/LoginFormContainer"-->
+        <LinearLayout style="@style/Match"
+                      android:orientation="vertical">
+
+
+            <EditText
+                    android:id="@+id/name"
+                    android:layout_marginTop="16dp"
+                    android:minHeight="48dp"
+                    android:background="@drawable/selector_input"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    style="@style/MatchWidth"
+
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/prompt_name" />
+
+
+            <EditText
+                    android:id="@+id/password"
+                    android:background="@drawable/selector_input"
+                    android:layout_marginTop="16dp"
+                    android:minHeight="48dp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:inputType="textPassword"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeActionId="@+id/login"
+                    android:imeOptions="actionUnspecified" />
+
+            <ru.team55.ui.SymbolButton
+                    android:text="$"
+                    android:textSize="32dp"
+                    android:textColor="@color/orange3"
+                    android:id="@+id/log_in_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+
+
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:layout_gravity="right" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             style="@style/Match">
+
+    <LinearLayout
+              android:orientation="vertical"
+              android:id="@+id/myRoot"
+              style="@style/Match" android:background="@drawable/bg_post" android:padding="16dp">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Оформление заказа"
+                android:id="@+id/textView" android:gravity="center" android:textSize="18dp"/>
+
+
+
+    </LinearLayout>
+  <!--  <LinearLayout android:orientation="horizontal" style="@style/MatchWidth" android:layout_gravity="bottom" android:gravity="right">
+        <Button android:id="@+id/btnCancel" android:text="Отмена" style="@style/Wrap"/>
+        <Button android:id="@+id/btnConfirm" android:text="Подтвердить заказ" style="@style/Wrap"/>
+    </LinearLayout>
+-->
+</FrameLayout>

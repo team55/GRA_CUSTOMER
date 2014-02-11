@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              style="@style/Match"
+                android:padding="8dp">
+
+
+    <TextView
+            style="@style/WeightWidth"
+            android:id="@+id/textName"
+            android:textStyle="bold"
+            android:textSize="22dp" />
+
+<!--
+    <ru.team55.ui.CustomFontTextView
+            style="@style/Wrap"
+            android:id="@+id/textRating"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#901010"/>
+-->
+
+    <TextView
+            style="@style/Wrap"
+            android:id="@+id/textRating"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#901010" />
+
+</LinearLayout>

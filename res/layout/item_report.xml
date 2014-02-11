@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/Match"
+              android:background="@drawable/bg_post"
+              android:layout_margin="3dp">
+
+    <!--android:background="@android:drawable/btn_dropdown"-->
+
+    <TextView style="@style/MatchWidth" android:id="@+id/textName" android:textStyle="bold"
+              android:text="Наименование организации" android:padding="5dp"/>
+
+    <View android:background="@drawable/card_header_divider"
+          android:layout_width="fill_parent"
+          android:layout_height="2.0dip"
+          android:layout_marginTop="8.0dip"  />
+
+
+
+    <LinearLayout android:orientation="horizontal" style="@style/MatchWidth">
+
+        <!-- подправить -->
+        <LinearLayout android:orientation="vertical" style="@style/WeightWidth">
+
+
+            <LinearLayout android:orientation="horizontal" style="@style/MatchWidth" android:gravity="center_vertical">
+                <ImageView style="@style/Wrap" android:src="@drawable/collections_go_to_today" android:padding="5dp"/>
+                <TextView style="@style/MatchWidth" android:id="@+id/textDate" android:text="Сегодня"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" style="@style/MatchWidth" android:gravity="center_vertical" android:id="@+id/containerDistance">
+                <ImageView style="@style/Wrap"  android:padding="5dp"/>
+                <TextView style="@style/WeightWidth" android:id="@+id/textDistance"/>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" style="@style/MatchWidth" android:gravity="center_vertical">
+                <ImageView style="@style/Wrap" android:src="@drawable/location_place" android:padding="5dp"/>
+                <TextView style="@style/WeightWidth" android:id="@+id/textMap"/>
+            </LinearLayout>
+
+
+
+            <View android:background="@drawable/card_header_divider"
+                  android:layout_width="fill_parent"
+                  android:layout_height="2.0dip"
+                  android:layout_marginTop="8.0dip"  />
+
+            <LinearLayout android:orientation="horizontal" style="@style/MatchWidth" android:gravity="center_vertical">
+                <ImageView style="@style/Wrap" android:src="@drawable/star_rate_orange" android:id="@+id/star" android:padding="5dp"/>
+                <TextView style="@style/WeightWidth" android:id="@+id/textRating" android:text="Рейтинг: 1 Место: 1 из 172"/>
+<!--
+                <ImageView style="@style/Wrap" android:src="@drawable/arrow_gray" android:padding="3dp"/>
+-->
+            </LinearLayout>
+
+
+            <LinearLayout android:orientation="horizontal" style="@style/MatchWidth" android:gravity="center_vertical|right">
+
+
+                <Button style="@style/Wrap" android:text="Подробнее ..."
+                        android:background="@drawable/btn_ya_selector"
+                        android:paddingRight="10dp" android:paddingLeft="10dp"
+                        android:layout_margin="3dp"
+                        android:id="@+id/btnMore"/>
+
+
+                <Button style="@style/WeightWidthWrapHeight" android:text="Заказать"
+                        android:textColor="#ff660000"
+                        android:background="@drawable/btn_ya_selector"
+                        android:paddingRight="10dp" android:paddingLeft="10dp"
+                        android:layout_margin="3dp"
+                        android:id="@+id/btnOrder"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <!--
+                        <LinearLayout android:orientation="horizontal" style="@style/MatchWidth" android:gravity="center_vertical">
+                            <ImageView style="@style/Wrap" android:src="@drawable/location_web_site" android:padding="5dp"/>
+                            <TextView style="@style/MatchWidth" android:id="@+id/textTags" android:text="сайт и почта"/>
+                        </LinearLayout>
+            -->
+
+
+
+        </LinearLayout>
+
+        <!--<ImageView style="@style/Wrap" android:src="@android:drawable/btn_dropdown"/>-->
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

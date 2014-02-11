@@ -1,0 +1,26 @@
+﻿Графика и тени и прочее
+
+http://bnotions.com/efficient-use-of-drawables-to-develop-a-dynamic-ui-on-android/
+http://devblog.solstice-mobile.com/2012/09/creating-custom-android-drawables-in-xml.html
+
+http://fdimarco.wordpress.com/2010/11/20/dropping-shadows-behind-views-in-android/
+
+
+navigation drawer
+http://stackoverflow.com/questions/17699869/how-to-show-the-drawerlayout-when-sliding-from-left-to-right-no-matter-where
+
+http://onsoftwareandstuff.com/2013/06/19/android-navigation-drawer-pattern/
+
+http://developer.android.com/intl/ru/design/patterns/navigation-drawer.html
+
+
+http://cyrilmottier.com/2012/06/08/the-making-of-prixing-3-polishing-the-sliding-app-menu/
+
+
+
+
+панельки
+http://gmariotti.blogspot.ru/2013/05/working-with-slidingpanelayout.html
+
+
+http://dribbble.com/MVBen
